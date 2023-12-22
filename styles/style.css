@@ -234,7 +234,7 @@ header .search-bar-container label:hover{
 }
 
 .home{
-  background: rgba(0,0,0,.5) url("/images/bg2.jpeg");
+  background: rgba(0,0,0,.5) url("/assets/images/bg2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
