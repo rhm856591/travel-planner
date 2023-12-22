@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/style.css"
 
 
-const contact = () => {
+const Contact = () => {
     return (
         <section className="contact" id="contact">
 
@@ -41,4 +41,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact
