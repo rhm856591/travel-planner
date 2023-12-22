@@ -7,7 +7,7 @@ import "../styles/style.css"
 const Hero = () => {
     return (
         <section className="home" id="home">
-            <Image src={BG} alt="" />
+         
 
 
 
