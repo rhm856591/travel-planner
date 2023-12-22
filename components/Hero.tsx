@@ -4,10 +4,10 @@ import BG from "../assets/images/bg2.jpeg"
 import "../styles/style.css"
 
 
+
 const Hero = () => {
     return (
         <section className="home" id="home">
-         
 
 
 
