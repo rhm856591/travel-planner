@@ -1,5 +1,10 @@
 import React from 'react'
 import "../styles/style.css"
+import Image from "next/image"
+import Pic1 from "../assets/images/pic1.png"
+import Pic2 from "../assets/images/pic2.png"
+import Pic3 from "../assets/images/pic3.png"
+import Pic4 from "../assets/images/pic4.png"
 
 
 const Review = () => {
@@ -22,7 +27,7 @@ const Review = () => {
 
                     <div className="swiper-slide">
                         <div className="box">
-                            <img src="images/pic1.png" alt="" />
+                            <Image src={Pic1} alt=""/>
                                 <h3>john deo</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
                                     fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
@@ -38,7 +43,7 @@ const Review = () => {
                     </div>
                     <div className="swiper-slide">
                         <div className="box">
-                            <img src="images/pic2.png" alt="" />
+                            <Image src={Pic2} alt="" />
                                 <h3>john deo</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
                                     fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
@@ -54,7 +59,7 @@ const Review = () => {
                     </div>
                     <div className="swiper-slide">
                         <div className="box">
-                            <img src="images/pic3.png" alt="" />
+                            <Image src={Pic3} alt="" />
                                 <h3>john deo</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
                                     fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
@@ -70,7 +75,7 @@ const Review = () => {
                     </div>
                     <div className="swiper-slide">
                         <div className="box">
-                            <img src="images/pic4.png" alt="" />
+                            <Image src={Pic4} alt="" />
                                 <h3>john deo</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
                                     fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias

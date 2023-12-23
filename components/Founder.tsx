@@ -1,5 +1,7 @@
 import React from 'react'
 import "../styles/style.css"
+import Image from "next/image"
+import i1 from "../assets/images/1.jpg"
 
 
 const Founder = () => {
@@ -22,7 +24,7 @@ const Founder = () => {
                 </div>
                 <div className="in-founder-container">
                     <div className="founder-image">
-                        <img src="/images/1.jpg" alt="" />
+                        <Image src={i1} alt="" />
                     </div>
                     <div className="founder-contain">
                         <div className="founder-message  in-margin">
@@ -44,7 +46,7 @@ const Founder = () => {
                 </div>
                 <div className="in-founder-container ">
                     <div className="founder-image">
-                        <img src="/images/1.jpg" alt="" />
+                        <Image src={i1} alt="" />
                     </div>
                     <div className="founder-contain">
                         <div className="founder-message  in-margin">

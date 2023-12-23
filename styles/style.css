@@ -34,6 +34,8 @@ section{
   color:var(--blue);
   border-radius: .5rem;
   padding:.2rem 1rem;
+  margin: 0.1rem;
+  text-transform: uppercase;
 }
 
 .heading span.space{
