@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/style.css"
+import { FaHotel } from "react-icons/fa6";
 
 
 const Services = () => {
@@ -20,7 +21,8 @@ const Services = () => {
             <div className="box-container">
 
                 <div className="box">
-                    <i className="fas fa-hotel"></i>
+                    <FaHotel />
+
                     <h3>affordable hotels</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>
