@@ -1,21 +1,34 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Signin Page | Next.js E-commerce Dashboard Template",
-  description: "This is Signin page for TailAdmin Next.js",
-  // other metadata
-};
+import { signIn } from "next-auth/react";
+
 
 const SignIn: React.FC = () => {
+  const [creds, setCreds] = useState({
+    email: "",
+    password: "",
+  })
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(creds)
+    signIn("credentials", {
+      email: creds.email,
+      password: creds.password,
+      callbackUrl: "/dashboard",
+    })
+
+  }
   return (
     <>
       {/* <Breadcrumb pageName="Sign In" /> */}
 
-      <div className="h-screen flex items-center justify-center rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-        <div className="flex flex-wrap items-center">
+
+      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+        <div className="flex flex-wrap items-center min-h-screen">
+
           <div className="hidden w-full xl:block xl:w-1/2">
             <div className="py-17.5 px-26 text-center">
               <Link className="mb-5.5 inline-block" href="/">
@@ -172,15 +185,17 @@ const SignIn: React.FC = () => {
                 Sign In to Travel Planner
               </h2>
 
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-4">
-                  <label className="mb-2.5 block font-medium text-black dark:text-white">
+                  <label className="mb-2.5 block font-medium text-black">
                     Email
                   </label>
                   <div className="relative">
                     <input
                       type="email"
                       placeholder="Enter your email"
+                      value={creds.email}
+                      onChange={(e) => setCreds({ ...creds, email: e.target.value })}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -205,13 +220,15 @@ const SignIn: React.FC = () => {
                 </div>
 
                 <div className="mb-6">
-                  <label className="mb-2.5 block font-medium text-black dark:text-white">
-                    Re-type Password
+                  <label className="mb-2.5 block font-medium text-black">
+                    Password
                   </label>
                   <div className="relative">
                     <input
                       type="password"
                       placeholder="6+ Characters, 1 Capital letter"
+                      value={creds.password}
+                      onChange={(e) => setCreds({ ...creds, password: e.target.value })}
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
                     />
 
@@ -242,6 +259,7 @@ const SignIn: React.FC = () => {
                 <div className="mb-5">
                   <input
                     type="submit"
+                    
                     value="Sign In"
                     className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
                   />
