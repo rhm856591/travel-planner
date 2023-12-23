@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
+// import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ const SignUp: React.FC = () => {
   return (
     <>
       {/* Ensure the correct prop is provided to the Breadcrumb component */}
-      <Breadcrumb pageName="Sign Up" />
+      {/* <Breadcrumb pageName="Sign Up" /> */}
 
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="flex flex-wrap items-center">

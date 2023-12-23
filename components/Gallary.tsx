@@ -20,7 +20,7 @@ const Gallary = () => {
             <div className="box-container">
 
                 <div className="box">
-                    <Image src="images/g-1.jpg" alt="" /> 
+                    <Image src="/images/g-1.jpg" width={5} height={10} alt="" /> 
                         <div className="content">
                             <h3>amazing places</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
