@@ -96,14 +96,14 @@ header .navbar a:hover{
   color:var(--orange);
 }
 
-header .icons i{
+header .icons .i{
   font-size: 2.5rem;
   color:#fff;
   cursor: pointer;
   margin-right: 2rem;
 }
 
-header .icons i:hover{
+header .icons .i:hover{
   color: green;
 }
 
@@ -141,6 +141,20 @@ header .search-bar-container label{
 
 header .search-bar-container label:hover{
   color:var(--orange);
+}
+
+.LoginButton {
+  background-color: #e74c3c; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 16px; /* Font size for the button text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.LoginButton:hover {
+  background-color: #c23b2c; /* Change background color on hover */
 }
 
 .login-form-container{
@@ -281,6 +295,9 @@ header .search-bar-container label:hover{
   background:rgba(0,0,0,.7);
   position: relative;
   top:10rem;
+}
+.own{
+  display: flex;
 }
 .founder
 {
@@ -455,11 +472,43 @@ header .search-bar-container label:hover{
   padding:1rem;
   text-align: center;
 }
+/* .svg-inline--fa{
+  height: 5rem;
+} */
+.services .box-container .box .font1{
+  padding: 1rem;
+  font-size: 5rem;
+  color:var(--gary);
+}
 
-.services .box-container .box i{
-  padding:1rem;
+.services .box-container .box .font2{
+  padding: 1rem;
   font-size: 5rem;
   color:var(--orange);
+}
+
+.services .box-container .box .font3{
+  padding: 1rem;
+  font-size: 5rem;
+  color:var(--blue);
+}
+
+.services .box-container .box .font4{
+  padding: 1rem;
+  font-size: 5rem;
+  color:var(--orange);
+}
+
+.services .box-container .box .font5{
+  padding: 1rem;
+  font-size: 5rem;
+  color:var(--blue);
+}
+
+.services .box-container .box .font6{
+  padding: 1rem;
+  font-size: 5rem;
+  color:var(--gary);
 }
 
 .services .box-container .box h3{
@@ -524,6 +573,7 @@ header .search-bar-container label:hover{
   color:#eee;
   padding:.5rem 0;
 }
+
 
 .review .review-slider{
   padding-bottom: 2rem;
@@ -643,6 +693,7 @@ header .search-bar-container label:hover{
 
 /* media queries  */
 
+
 @media (max-width:1200px){
 
   html{
@@ -694,6 +745,10 @@ header .search-bar-container label:hover{
     padding:1.5rem;
     margin:1.5rem 0;    
     background:#222;
+  }
+  .own{
+    display: flex;
+    flex-direction: column;
   }
 
 }

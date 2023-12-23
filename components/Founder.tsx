@@ -17,7 +17,7 @@ const Founder = () => {
                 <span>e</span>
                 <span>r</span>
             </h1>
-
+            <div className='own'>
             <div className="founder-container">
                 <div className="founder">
                     Founder
@@ -62,7 +62,7 @@ const Founder = () => {
 
                 </div>
             </div>
-
+            </div>
         </section>
     )
 }

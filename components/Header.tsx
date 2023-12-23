@@ -1,5 +1,8 @@
 import React from 'react'
 import "../styles/style.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp,faCcVisa } from '@fortawesome/free-brands-svg-icons';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
@@ -20,9 +23,11 @@ const Header = () => {
             </nav>
 
             <div className="icons">
-                <a href="https://wa.me/+918565911175" target="_blank"><i className="fa fa-whatsapp"></i></a>
-                <a href="tel:+918565911175"><i className="fa fa-phone"></i></a>
-                <i className="fa fa-cc-visa"></i>
+                <a href="https://wa.me/+918565911175" target="_blank"><FontAwesomeIcon className='i' icon={faWhatsapp} /></a>
+                <a href="tel:+918565911175"><FontAwesomeIcon className='i' icon={faPhoneAlt} /></a>
+            </div>
+            <div>
+            <button className='LoginButton'>Login / Sign Up</button>
             </div>
 
             <form action="" className="search-bar-container">

@@ -27,7 +27,7 @@ const Review = () => {
 
                     <div className="swiper-slide">
                         <div className="box">
-                            <Image src={Pic1} alt=""/>
+                            <Image className='img' src={Pic1} alt=""/>
                                 <h3>john deo</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
                                     fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
