@@ -1,5 +1,8 @@
 import React from 'react'
 import "../styles/style.css"
+import Image from 'next/image'
+import CI from "../assets/images/contact-img.svg"
+// import CI from "../assets/images/g-5.jpg"
 
 
 const Contact = () => {
@@ -19,7 +22,7 @@ const Contact = () => {
             <div className="row">
 
                 <div className="image">
-                    <img src="images/contact-img.svg" alt="" />
+                    <Image src={CI} alt="" />
                 </div>
 
                 <form action="">
