@@ -5,6 +5,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google"
 import db from "@/prisma/db";
 import bcrypt from "bcrypt";
+import { NextResponse } from "next/server";
 
 
 export const authOptions: NextAuthOptions = {
@@ -45,6 +46,7 @@ export const authOptions: NextAuthOptions = {
     ],
     pages: {
         signIn: "/auth/signin",
+
     }
 }
 
