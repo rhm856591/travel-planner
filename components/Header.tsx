@@ -3,6 +3,7 @@ import "../styles/style.css"
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -27,7 +28,7 @@ const Header = () => {
                 <a href="tel:+918565911175"><FontAwesomeIcon className='i' icon={faPhone} /></a>
             </div>
             <div>
-                <button className='LoginButton'>Login / Sign Up</button>
+                <Link href="/auth/signin" className='LoginButton'>Login / Sign Up</Link>
             </div>
 
             <form action="" className="search-bar-container">
