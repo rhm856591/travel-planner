@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/style.css"
-import { FaHotel } from "react-icons/fa6";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBullhorn, faGlobeAsia, faHiking, faHotel, faPlane, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 
 const Services = () => {
@@ -21,38 +22,43 @@ const Services = () => {
             <div className="box-container">
 
                 <div className="box">
-                    <FaHotel />
+                    <FontAwesomeIcon className='font-1' icon={faHotel} />
 
                     <h3>affordable hotels</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>
                 </div>
                 <div className="box">
-                    <i className="fas fa-utensils"></i>
+                    {/* <i className="fas fa-utensils"></i> */}
+                    <FontAwesomeIcon className='font-2' icon={faUtensils} />
                     <h3>food and drinks</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>
                 </div>
                 <div className="box">
-                    <i className="fas fa-bullhorn"></i>
+                    {/* <i className="fas fa-bullhorn"></i> */}
+                    <FontAwesomeIcon className='font-3' icon={faBullhorn} />
                     <h3>safty guide</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>
                 </div>
                 <div className="box">
-                    <i className="fas fa-globe-asia"></i>
+                    {/* <i className="fas fa-globe-asia"></i> */}
+                    <FontAwesomeIcon className='font-4' icon={faGlobeAsia} />
                     <h3>around the world</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>
                 </div>
                 <div className="box">
-                    <i className="fas fa-plane"></i>
+                    {/* <i className="fas fa-plane"></i> */}
+                    <FontAwesomeIcon className='font-5' icon={faPlane} />
                     <h3>fastest travel</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>
                 </div>
                 <div className="box">
-                    <i className="fas fa-hiking"></i>
+                    {/* <i className="fas fa-hiking"></i> */}
+                    <FontAwesomeIcon className='font-6' icon={faHiking} />
                     <h3>adventures</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate
                         exercitationem ut minima itaque iusto ipsum corrupti!</p>

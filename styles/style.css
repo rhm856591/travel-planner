@@ -23,6 +23,7 @@ section{
   padding:2rem 9%;
 }
 
+
 .heading{
   text-align: center;
   padding:2.5rem 0
@@ -96,14 +97,14 @@ header .navbar a:hover{
   color:var(--orange);
 }
 
-header .icons i{
+header .icons .i{
   font-size: 2.5rem;
   color:#fff;
   cursor: pointer;
   margin-right: 2rem;
 }
 
-header .icons i:hover{
+header .icons .i:hover{
   color: green;
 }
 
@@ -141,6 +142,19 @@ header .search-bar-container label{
 
 header .search-bar-container label:hover{
   color:var(--orange);
+}
+.LoginButton {
+  background-color: #3498db; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.LoginButton:hover {
+  background-color: #2980b9; 
 }
 
 .login-form-container{
@@ -281,6 +295,11 @@ header .search-bar-container label:hover{
   background:rgba(0,0,0,.7);
   position: relative;
   top:10rem;
+}
+
+.own{
+  display: flex;
+  flex-direction: row;
 }
 .founder
 {
@@ -456,10 +475,40 @@ header .search-bar-container label:hover{
   text-align: center;
 }
 
-.services .box-container .box i{
+.services .box-container .box .font-1{
   padding:1rem;
   font-size: 5rem;
   color:var(--orange);
+}
+
+.services .box-container .box .font-2{
+padding:1rem;
+  font-size: 5rem;
+  color:var(--blue);
+}
+
+.services .box-container .box .font-3{
+  padding:1rem;
+  font-size: 5rem;
+  color:var(--gary);
+}
+
+.services .box-container .box .font-4{
+  padding:1rem;
+  font-size: 5rem;
+  color:var(--gary);
+}
+
+.services .box-container .box .font-5{
+  padding:1rem;
+  font-size: 5rem;
+  color:var(--orange);
+}
+
+.services .box-container .box .font-6{
+  padding:1rem;
+  font-size: 5rem;
+  color:var(--blue);
 }
 
 .services .box-container .box h3{
@@ -694,6 +743,10 @@ header .search-bar-container label:hover{
     padding:1.5rem;
     margin:1.5rem 0;    
     background:#222;
+  }
+  .own{
+    display: flex;
+    flex-direction: column;
   }
 
 }
