@@ -12,7 +12,7 @@ const Review = () => {
         <section className="review" id="review">
 
             <h1 className="heading">
-               
+
                 <span>r</span>
                 <span>e</span>
                 <span>v</span>
@@ -23,70 +23,78 @@ const Review = () => {
 
             <div className="swiper-container review-slider">
 
-                <div className="box-container">
+                <div className="box-container grid-container">
 
                     <div className="swiper-slide">
                         <div className="box">
-                            <Image src={Pic1} alt=""/>
-                                <h3>john deo</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                                    fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                                    consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                                <div className="stars">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                </div>
+                            <div className='review-image'>
+                                <Image src={Pic1} alt="" />
+                            </div>
+                            <h3>john deo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                                fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                                consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="far fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <div className="swiper-slide">
                         <div className="box">
-                            <Image src={Pic2} alt="" />
-                                <h3>john deo</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                                    fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                                    consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                                <div className="stars">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                </div>
+                            <div className='review-image'>
+                                <Image src={Pic2} alt="" />
+                            </div>
+                            <h3>john deo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                                fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                                consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="far fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <div className="swiper-slide">
                         <div className="box">
-                            <Image src={Pic3} alt="" />
-                                <h3>john deo</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                                    fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                                    consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                                <div className="stars">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                </div>
+                            <div className='review-image'>
+                                <Image src={Pic3} alt="" />
+                            </div>
+                            <h3>john deo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                                fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                                consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="far fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <div className="swiper-slide">
                         <div className="box">
-                            <Image src={Pic4} alt="" />
-                                <h3>john deo</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
-                                    fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
-                                    consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                                <div className="stars">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-star"></i>
-                                    <i className="far fa-star"></i>
-                                </div>
+                            <div className='review-image'>
+                                <Image src={Pic4} alt="" />
+                            </div>
+                            <h3>john deo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt
+                                fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias
+                                consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <div className="stars">
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="fas fa-star"></i>
+                                <i className="far fa-star"></i>
+                            </div>
                         </div>
                     </div>
 

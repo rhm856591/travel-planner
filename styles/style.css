@@ -574,8 +574,19 @@ padding:1rem;
   padding:.5rem 0;
 }
 
+.review-image{
+  display: flex;
+  justify-content: center;
+}
+
 .review .review-slider{
   padding-bottom: 2rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
 
 .review .box{
